@@ -23,9 +23,10 @@
     <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
         {{ $game->description }}
     </p>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
+    <a href="{{$game->downloadLink}}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
             Download
-        </a>
+    </a>
+    
 
 
 

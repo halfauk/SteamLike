@@ -14,7 +14,7 @@
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    @livewireStyles
+    
 </head>
 
 
@@ -30,7 +30,7 @@
                 </div>
                 
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
-                <livewire:search/>
+                
                 <a class="no-underline hover:underline" href="/">Home</a>  
                 <a class="no-underline hover:underline" href="/Games">Games</a>
                      
@@ -40,7 +40,7 @@
                             <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                     @else
-                        <a class= "no-underline hover:underline" href="/Users">{{ Auth::user()->name }}" </a>
+                        <a class= "no-underline hover:underline" href="/Users">{{ Auth::user()->name }} </a>
 
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"
@@ -63,6 +63,6 @@
             @include('layouts.footer')
         </div>
     </div>
-    @livewireScripts
+
 </body>
 </html>
